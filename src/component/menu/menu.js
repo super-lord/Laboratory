@@ -36,10 +36,16 @@ export default class Menus extends Component  {
                     <span>富文本编辑</span>
                     </Link>
                 </Menu.Item>
-                <Menu.Item key="/reactcontext">
-                <Link to="/reactcontext" >
-                    <Icon type="edit" />
-                    <span>react-context</span>
+                <Menu.Item key="/oldcontext">
+                <Link to="/oldcontext" >
+                    {/* <Icon type="edit" /> */}
+                    <span>react-16.3以下context用法</span>
+                    </Link>
+                </Menu.Item>
+                <Menu.Item key="/newcontext">
+                <Link to="/newcontext" >
+                    {/* <Icon type="edit" /> */}
+                    <span>react-16.3以上context用法</span>
                     </Link>
                 </Menu.Item>
             </Menu>

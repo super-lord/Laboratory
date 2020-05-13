@@ -13,7 +13,8 @@ import NewsReactRedux from './page/news/NewsReactRedux.js';
 import AnimationPage from './page/animation/animationPage';
 import EditorDemo from './page/editor/editor'
 import NotFind from './page/notFind/NotFind'
-import ReactcontextDemo from './page/ReactcontextDemo/index'
+import oldcontext from './page/ReactcontextDemo/oldContext/index'
+import newcontext from './page/ReactcontextDemo/newContext/index'
 export function Routers() {
         return (
             <div>
@@ -24,7 +25,8 @@ export function Routers() {
                     <Route exact path="/login" component={LoginReactRedux} />
                     <Route exact path="/animation" component={AnimationPage}/>
                     <Route exact path="/editor" component={EditorDemo}/>
-                    <Route exact path="/reactcontext" component={ReactcontextDemo}/>
+                    <Route exact path="/oldcontext" component={oldcontext}/>
+                    <Route exact path="/newcontext" component={newcontext}/>
                     <Route component={NotFind} />
                 </Switch>
             </div>
